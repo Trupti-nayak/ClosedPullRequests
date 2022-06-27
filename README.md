@@ -9,7 +9,7 @@ An effort is made to keep the UI and business logic seperate and use extensions 
 
 
 Extension:
-This app can be extended o be more generic by providing a User Interface for the user to give the user details and repo name to show the UI
+This app can be extended to be more generic by providing a User Interface for the user to give the user details and repo name to show the UI
 
 Improvements:
 - Make the cellForRowAt indexPath be generic and accept more than one cell by configuring the viewmodel for each of the cells and presenter is responsible for configuring them
