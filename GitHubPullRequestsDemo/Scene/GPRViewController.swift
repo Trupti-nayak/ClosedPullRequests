@@ -54,9 +54,8 @@ final class GPRViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        let repoName = "GitPullRequests"
-        let ownerName = "Trupti-nayak"
-        interactor?.getAllClosedPullRequests(owner:ownerName, repoName: repoName)
+        // configured from UI
+        interactor?.getAllClosedPullRequests(owner:"Trupti-nayak", repoName: "GitPullRequests")
     }
 }
 

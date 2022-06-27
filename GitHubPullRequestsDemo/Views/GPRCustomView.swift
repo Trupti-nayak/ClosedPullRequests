@@ -50,16 +50,3 @@ enum ImageProvider: String {
     case thumbnailPlaceholder
 }
 
-extension String {
-    func getReadableDate() -> String {
-        let formatter = DateFormatter()
-        formatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ssZ"  //2022-06-25T15:29:22Z
-        formatter.timeZone = TimeZone(abbreviation: "UTC")
-        let date = formatter.date(from: self)
-
-        formatter.dateStyle = .medium
-        formatter.locale = .current
-        return formatter.string(from: date ?? Date())
-        
-    }
-}
